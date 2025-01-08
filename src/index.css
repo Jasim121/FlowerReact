@@ -75,7 +75,7 @@
 }
 
 .menu-toggle span {
-  background-color: white;
+  background-color: #4d2b1f;
   height: 3px;
   width: 25px;
   margin: 3px 0;
@@ -87,11 +87,12 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #8c6e58;
+    background-color: #f5f5f5;;
   }
 
   .menu.active {
     display: flex;
+    margin-left: -0px;
   }
 
   .menu a {
@@ -102,7 +103,8 @@
 
   .menu-toggle {
     display: flex;
-    margin-left: 350px;
+    /* margin-left: 350px; */
+    color: #4d2b1f;
   }
 
   .dropdown-content {
@@ -110,7 +112,11 @@
     box-shadow: none;
   }
 }
-
+.topsearch{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .topheading{
   text-align: left;
   padding:20px 10px; 
@@ -327,5 +333,52 @@ tr:nth-child(even) {
 
 .close-button:hover {
   background-color: #4d2b1f;
+}
+
+/* add product  */
+
+.form-container {
+  width: 98%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d3a87d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+.tag button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.tag button:hover {
+  color: #ffcccc;
+}
+.tag-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  flex-grow: 1;
 }
 

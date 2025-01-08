@@ -65,6 +65,26 @@ function Coupons() {
          <input type="text"></input>
          </div>  
                   </div>
+                  <div class="radio-container">
+          <label for="">Start Date: &nbsp;&nbsp;</label>
+         <div className="pform">
+         <input type="datetime-local" 
+               id="Test_DatetimeLocal" 
+               min="2015-01-01T00:00" 
+               max="2025-12-31T23:59" 
+               step="1"></input>  
+         </div>  
+                  </div>
+                  <div class="radio-container">
+          <label for="">Expiry Date:</label>
+         <div className="pform">
+         <input type="datetime-local" 
+               id="Test_DatetimeLocal" 
+               min="2015-01-01T00:00" 
+               max="2025-12-31T23:59" 
+               step="1"></input>  
+         </div>  
+                  </div>
             <button className="close-button">
               Submit
             </button>

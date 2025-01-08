@@ -6,10 +6,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import DeliveryCharges from './pages/DeliveryCharges';
+import Navbar from './components/Navbar';
+import AddNewProduct from './pages/AddNewProduct';
 
 function App() {
   const router = createBrowserRouter([
-   
+    {
+      path: "/",
+      element: <Navbar/>,
+    },
     {
       path: "/coupons",
       element: <Coupons/>,
@@ -22,6 +27,11 @@ function App() {
       path: "/deliveryCharges",
       element: <DeliveryCharges/>,
     },
+    {
+      path: "/addnewproduct",
+      element: <AddNewProduct/>,
+    },
+   
    
   ])
   return (

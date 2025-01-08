@@ -8,7 +8,7 @@ function Navbar() {
       };
   return (
     <>
-   
+
      <div class="topnav container-fluid">
         <div class="logo">
             <img src="flowerdashbord.png" alt="" />
@@ -32,7 +32,7 @@ function Navbar() {
                 <a href="#"><i class="fa-solid fa-boxes-stacked"></i> Products <i class="fa-solid fa-angle-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#">Listed Products</a>
-                    <a href="#">Listed Products</a>
+                    <Link to="/addnewproduct">Add New Products</Link>
                     <a href="#">Compliments </a>
                 </div>
             </div>
